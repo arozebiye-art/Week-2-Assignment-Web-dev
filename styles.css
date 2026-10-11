@@ -1,0 +1,141 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+.page-header {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.page-header img {
+    vertical-align: middle;
+}
+
+h1, h2 {
+    color: #1d4ed8;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.add-expense-section,
+.expenses-section,
+.instructions-section,
+.video-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Form styling */
+.add-expense-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-expense-section > h2 {
+    margin-top: 0;
+}
+
+input:not([type="submit"]),
+select {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.4);
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Expenses table */
+.expenses-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.expenses-section th,
+.expenses-section td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: left;
+}
+
+.expenses-section thead {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Positional pseudo-class */
+.expenses-section tr:nth-child(even) {
+    background-color: #eff6ff;
+}
+
+/* Hover pseudo-class */
+.expenses-section tbody tr:hover {
+    background-color: #dbeafe;
+}
+
+/* Details and summary */
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #1d4ed8;
+}
+
+.instructions-section details p {
+    padding: 10px;
+    background-color: #f8fafc;
+    border-radius: 5px;
+}
+
+/* Video */
+.video-section iframe {
+    max-width: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #64748b;
+}
